@@ -1,0 +1,98 @@
+body{
+    background-image: url("imagen/museum.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    color: rgba(146, 33, 67, 0.877);
+}
+
+.grid-container{
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    grid-template-areas:
+    "header gatosVidas"
+    "main main"
+}
+
+/*Estilos de header*/
+header{
+    grid-area: header;
+    text-align: center;
+}
+
+/*Estilos de gatosVidas*/
+.gatosVidas{
+    grid-area: gatosVidas;
+    border: solid rgb(202, 50, 50);
+    border-radius: 20px;
+    width: 80%;
+    height: 60%;
+    top: 20px;
+    font-size: 30px;
+    margin: auto;
+}
+p{
+    color: orangered;
+    margin: 10px 20px ;
+    text-align: center;
+}
+
+/*Estilos de main*/
+main{
+    grid-area: main;
+    margin: auto; 
+}
+
+.container{
+    width: 80%;
+    height: 90%;
+    text-align: center;
+    margin: auto;
+    top: 50px;
+}
+/*Animacion del Gato*/
+@keyframes catAzu{
+    0%{
+        transform: translate(0px, -20px) scale(0.8);
+    }
+
+    50%{
+        transform: translate(0);
+    }
+
+    100%{
+        transform: translate(0px, -20px) scale(0.8);
+    }
+}
+
+.catAzu{
+    position: center;
+    animation-name: catAzu;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    width: 160px;
+    height: 170px;
+    transform: scale(1);
+    transition: 1s;
+    margin: auto;
+    align-content: center;
+}
+
+/*Animacioin del texto*/
+#text{
+    text-align: center;
+}
+
+button{
+    border: 1px;
+    border-radius: 10px;
+    width: 90px;
+    height: 50px;
+    cursor: pointer;
+
+}
+
+
+
+
+

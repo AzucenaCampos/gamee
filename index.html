@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game</title>
+    <link href="game.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.1/css/all.css" integrity="sha384-xxzQGERXS00kBmZW/6qxqJPyxW3UR0BPsL4c8ILaIWXva5kFi7TxkIIaMiKtqV1Q" crossorigin="anonymous">
+</head>
+<body>
+    <div class="grid-container">
+        <header>
+            <h1>GATO ARTISTA</h1>
+            
+        </header>
+        <div class= "gatosVidas">
+            <p id= "vidasRestantes"></p> 
+        </div>
+        <main>
+            <div class="container">
+                <div class="div-img">   
+                <img src="imagen/catAzu.png" alt="catAzu" class="catAzu">
+            
+                </div> 
+                <div class = "preguntas">
+                <h2 id="text"></h2> 
+                <button onClick="correcta('a')" id="respuestaA"></button>
+                <button onClick="correcta('b')" id="respuestaB"></button>
+                <button onClick="correcta('c')" id="respuestaC"></button>
+                </div>
+        </main>           
+    </div>
+</div>
+    <script type= ""  src= "game.js"></script>
+</body>
+</html>
