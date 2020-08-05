@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game</title>
+    <link href="game.css" rel="stylesheet" type="text/css">
+    
+</head>
+<body>
+    <div>
+        <div>
+            <p onclick="jumpscare();"></p>
+            <img id="jumpscare" src="imagen/Karen.jpg" />
+            <audio id="scream" src=""></audio>
+            <div>
+                <audio id="alert" src=""></audio>
+            </div>
+        </div>
+        <div>
+            <audio id="horror" autoplay loop controls>
+            <source id="horror" src="../HorrorAmbience.mp3" type="audio/mpeg">
+            </audio>
+        </div>
+        <div>
+            <img src="imagen/catAzu.png" alt="catAzu" id="catAzu">
+            <img src="imagen/cabeza.png" alt="cabeza" id="cabeza" class="clicker" onclick="activatePreg()">
+            <img src="imagen/collar.png" alt="collar" id="collar" class="clicker" onclick="activatePreg()">
+            <img src="imagen/cuadro.png" alt="cuadro" id="cuadro" class="clicker" onclick="activatePreg()">
+            <img src="imagen/jarron.png" alt="jarron" id="jarron" class="clicker" onclick="activatePreg()">
+            <img src="imagen/pata.png" alt="pata" id="pata" class="clicker" onclick="activatePreg()">
+
+        </div>
+        <div id="controls">
+            <button id="playpause" title="play" onclick="pause()">
+            <img src="imagen/speakeron.png" alt="play" id="speakeron" ></button>
+            <button id="pause" title="pause" onclick="pause()">
+            <img src="imagen/speakeroff.png" alt="pause" id="speakeroff">
+            </button>
+        </div>
+
+        <div>
+            <progress id="progressBar" value="3" max="3" style="width:150px; height: 35px;"></progress>
+            <span id="status"></span>
+            <img src="imagen/healthbar.png" id="healthbar">
+        </div>
+
+        <div id="bloquePreg">
+            <h1 id="preguntas"></h1>
+            <button onClick="validar('a')" id="respuestaA" class="respuesta"></button>
+            <button onClick="validar('b')" id="respuestaB" class="respuesta"></button>
+            <button onClick="validar('c')" id="respuestaC" class="respuesta"></button>
+        </div>
+
+        <div>
+            <img src="imagen/flecha.png" id="flecha">
+        </div>
+    </div>
+         
+    
+    <script type= ""  src= "game.js"></script>
+</body>
+</html>
